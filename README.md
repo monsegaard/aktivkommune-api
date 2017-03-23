@@ -5,5 +5,5 @@ API for exporting data from AktivKommune
   - Events
   - Buildings
 
-Useage:
+To use the API:
 
