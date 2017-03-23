@@ -8,14 +8,14 @@ API for exporting data from AktivKommune in json or csv format
 
 To use the API:
 
-Edit the system.php
+First edit the system.php. Customize this file it fits your requirements
 
-Run org_json.php, events_json.php, allocation_json.php or locations_json.php on your AktivKommune(Portico Estate) server.
+Run org_json.php, events_json.php, allocation_json.php or locations_json.php with *curl_exec($ch)* on the url server.
 
-Example code to exctract json data from url:
+Example PHP code to exctract json data from url:
 
 ```php
-        $ch = curl_init("http://somthing.com/org_json.php");
+        $ch = curl_init("http://something.com/org_json.php");
 
         curl_setopt($ch, CURLOPT_NOBODY, true);
         curl_exec($ch);
