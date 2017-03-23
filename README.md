@@ -1,4 +1,4 @@
-# aktivkommune
+# AktivKommune-API
 API for exporting data from AktivKommune in json or csv format
 
   - Organizations
