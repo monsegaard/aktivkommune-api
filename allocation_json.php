@@ -17,28 +17,6 @@
     $con = pg_connect("host=".DB_HOST. " port=" .DB_PORT. " dbname=" .DB_NAME. " user=" .DB_USER. " password=" .DB_PASS);
     pg_set_client_encoding($con, "UTF8");
 
-    /** $sql = "SELECT
-            bb_allocation.building_name as building_name,
-            bb_allocation.from_ as date_time_from,
-            bb_allocation.to_ as date_time_to,
-            bb_resource.name as recource_name,
-            bb_building.location_code as location,
-            bb_organization.name as organization_name
-            FROM bb_allocation, bb_allocation_resource, bb_resource, bb_building, bb_organization
-            INNER JOIN bb_allocation_resource
-            ON bb_allocation_resource.allocation_id = bb_allocation.id
-            INNER JOIN bb_resource
-            ON bb_resource.id = bb_allocation_resource.resource_id
-            INNER JOIN bb_building
-            ON bb_buildning.id = bb_resource.building_id
-            INNER JOIN bb_organization
-            ON bb_organization.id = bb_allocation.organization_id
-            WHERE bb_allocation.from_  >= CURRENT_TIMESTAMP AND
-            bb_allocation.to_ > CURRENT_TIMESTAMP AND
-            bb_allocation.active=1
-            ORDER BY DATE(bb_allocation.from_)
-            ASC LIMIT 300"; **/
-
         $sql = "SELECT
                 bb_allocation.from_ as date_time_from,
                 bb_allocation.to_ as date_time_to,
@@ -90,7 +68,7 @@
 
     pg_close($con);
 
-    $fp = fopen('events_aktiv_fjell.json', 'w');
+    $fp = fopen('events_ecultura.json', 'w');
     fwrite($fp, json_encode($evt_array));
     fclose($fp);
 

@@ -14,6 +14,7 @@ Run org_json.php, events_json.php, allocation_json.php or locations_json.php on 
 
 Example code to exctract data from server:
 
+```php
         $ch = curl_init("http://somthing.com/org_json.php");
 
         curl_setopt($ch, CURLOPT_NOBODY, true);
@@ -30,3 +31,4 @@ Example code to exctract data from server:
         $json = json_decode($str, true);
 
         var_dump($json);
+```

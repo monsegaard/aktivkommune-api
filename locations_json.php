@@ -55,8 +55,8 @@ pg_set_client_encoding($con, "UTF8");
         $email = strtolower($row[7]);
         $phone = $row[8];
         $homepage = $row[9];
-        $images_url = 'https://aktiv.fjell.kommune.no/?menuaction=bookingfrontend.uidocument_building.download&id?' .$building_id. '&filter_owner_id=2';
-        $booking_url = 'https://aktiv.fjell.kommune.no/?menuaction=bookingfrontend.uibuilding.show&id=' .$building_id;
+        $images_url = 'https://something.com/?menuaction=bookingfrontend.uidocument_building.download&id?' .$building_id. '&filter_owner_id=2';
+        $booking_url = 'https://something.com/?menuaction=bookingfrontend.uibuilding.show&id=' .$building_id;
 
         // if ( $organization_number = '952304283') {
 

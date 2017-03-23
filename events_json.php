@@ -99,7 +99,7 @@
 
     echo json_encode($evt_array);
 
-    $file = fopen('events_aktiv_fjell.json', 'w');
+    $file = fopen('events_ecultura.json', 'w');
     fwrite($file, json_encode($evt_array));
     fclose($file);
 
