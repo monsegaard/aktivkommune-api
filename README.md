@@ -1,16 +1,16 @@
 # AktivKommune API
-API for exporting data from AktivKommune in json or csv format
+API for exporting data from external server with url in json or csv format
 
   - Organizations
   - Events
   - Buildings/Locations
   - Allocations
 
-To use the API:
+To use this API:
 
 First edit the system.php. Customize this file it fits your requirements
 
-Run org_json.php, events_json.php, allocation_json.php or locations_json.php with *curl_exec($ch)* on the url server.
+Run **org_json.php, events_json.php, allocation_json.php or locations_json.php** with *curl_exec($ch)* on the external server.
 
 Example PHP code to exctract json data from url:
 
