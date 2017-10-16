@@ -1,4 +1,4 @@
-# AktivKommune API
+# Test API
 API for exporting data from external server with url in json or csv format
 
   - Organizations
